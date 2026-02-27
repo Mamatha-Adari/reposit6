@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}task{% endblock %}</title>
+    <style>
+       
+        nav {
+            background-color: rgb(219, 214, 65);
+            
+        }
+        nav a {
+            height:"900";
+            color: rgb(181, 54, 149);
+            
+        }
+        nav a:hover { text-decoration:none;}
+        .container table,th,td{ padding: 2px;
+    width: 50%;
+    border: 1px solid black; 
+    padding: 8px;           
+    text-align: left;      
+  
+            }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <nav >
+        <a href="{% url 'home' %}"><b>Home</b></a>
+        <a href="{% url 'colleges' %}"><b>Colleges</b></a>
+        <a href="{% url 'students' %}"><b>Students</b></a>
+        <a href="{% url 'address' %}"><b>Address</b></a>
+   <a href="{% url 'send_email' %}"><b>contact</b></a>
+
+        
+    </nav>
+
+    {% block content %}{% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
