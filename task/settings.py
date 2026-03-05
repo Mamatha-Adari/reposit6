@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qr!qv1)2-8(xf$o-mnlhxfi@xc6_vb7&a)*%=h_%9nx+s!k8)$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -123,4 +123,5 @@ EMAIL_HOST_PASSWORD='ymok ulnz oace umxr'
 
 STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
